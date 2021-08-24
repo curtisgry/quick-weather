@@ -1,0 +1,112 @@
+body {
+  height: 100vh;
+  font-family: 'Urbanist', sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: rgb(236, 82, 82);
+}
+
+/* input area */
+.zip-input {
+  width: 70%;
+  max-width: 700px;
+  min-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.zip-input input {
+  text-align: center;
+  font-size: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: #eef4fc;
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 850px) {
+  .zip-input {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .zip-input input {
+    min-width: none;
+    max-width: none;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* weather */
+
+.current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp {
+  font-size: 50px;
+}
+
+.weather-info {
+  width: 400px;
+  height: 300px;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 0.6s;
+}
+
+.city-name {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 0.8s;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-rise {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.current span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current img {
+  margin-left: 15px;
+}
+
+.wind-icon {
+  width: 20px;
+}
